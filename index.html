@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Web_Music</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="Container">
+        <div class="volume">
+          <img class="icon-volume-mute" src="./img/volue.png" alt="" />
+          <img class="icon-volume-up" src="./img/volume-up.png" alt="" />
+        </div>
+        <img
+          class="icon-headphone"
+          src="./img/headphones.png"
+          alt="headphone"
+        />
+        <header class="container_header">
+          <h3 class="container__heading">Music</h3>
+          <h3 class="container__heading-desc">String 57th & 9th</h3>
+        </header>
+
+        <div class="cd">
+          <div
+            class="cd-thumb"
+            style="
+              background-image: url('https://menback.com/wp-content/uploads/2020/09/nhung-cau-rap-hay-cua-binz-1.jpg');
+            "
+          ></div>
+        </div>
+
+        <div class="control">
+          <div class="control__reload">
+            <i class="icon-reload fas fa-redo-alt"></i>
+          </div>
+          <div class="control__back">
+            <i class="icon-back fas fa-step-backward"></i>
+          </div>
+          <div class="control__video">
+            <i class="icon-pause fas fa-pause-circle"></i>
+            <i class="icon-video fas fa-play-circle"></i>
+          </div>
+          <div class="control__next">
+            <i class="icon-next fas fa-step-forward"></i>
+          </div>
+          <div class="control__random">
+            <i class="icon-random fas fa-random"></i>
+          </div>
+        </div>
+        <input
+          class="progress"
+          type="range"
+          value="0"
+          step="1"
+          min="0"
+          max="100"
+        />
+        <audio id="audio" src=""></audio>
+      </div>
+      <div class="play-music"></div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
